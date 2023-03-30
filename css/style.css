@@ -1,0 +1,32 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1440px;
+}
+
+.header__top{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__inner{
+    height: 100vh;
+}
+
+.header__content{
+    background-image: url('../img/bg.jpg'); /*FIXED WTF* */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+
+.header__content-inner{
+    min-height: 100vh;
+    
+    
+}
