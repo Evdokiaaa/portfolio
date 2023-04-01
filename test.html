@@ -195,19 +195,53 @@
     <section class = 'contact'>
         <div class="contact__content">
             <div class="container">
-                <div class="contact__inner">
-                    <h2 class="contact__title">Contact me</h2>
-                    <form action="" method="post">
-                        <input type="email" placeholder="E-mail" name = 'email' id = 'email'>
-                        <input type="tel" name="tel" id="tel" placeholder="Phone">
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <button class = 'sumbit__button'>Send Message</button>
-                    </form>
+                <div class="contact__inner"> <!--Something wrong with this div-->
+                    <div class="contact__form">
+                        <h2 class="contact__title">Contact me</h2>
+                        <form action="" method="post">
+                            <input type="email" placeholder="E-mail" name = 'email' id = 'email' class = 'contact__email'>
+                            <input type="tel" name="tel" id="tel" placeholder="Phone" class = 'contact__phone'>
+                            <textarea name="message" id="message" cols="10" rows="3" class = 'contact__textarea' placeholder="Message"></textarea>
+                            <button class = 'submit__button'>Send Message</button>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <div class="footer__item-text">
+                            <span>©</span>
+                            <span>2022</span>
+                            <span>GitHub</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="footer__item">
+                        <span>Evdokia</span>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="footer__item-container">
+                            <img class = 'footer__item-img' src="./img/footer__pics/instagram_logo.svg" alt="logo">
+                            <img class = 'footer__item-img' src="/img/footer__pics/facebook_logo.svg" alt="logo">
+                            <img class = 'footer__item-img' src="/img/footer__pics/twitter_logo.svg" alt="logo">
+                            <img class = 'footer__item-img' src="/img/footer__pics/pinterest__logo.svg" alt="logo">
+                         </div>
+                    </div>
+                  
+
+
+
+                </div>
+            </div>
+        </div>
         
     </footer>
             

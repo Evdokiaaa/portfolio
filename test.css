@@ -77,6 +77,13 @@ select {
   }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+     box-shadow: 0 0 0 30px inherit inset !important;
+}
+
 
 a{
     text-decoration: none;
@@ -362,6 +369,11 @@ a{
   background-color: black;
 }
 
+.price__title{
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
 .price__items{
   display: flex;
   justify-content: center;
@@ -449,4 +461,130 @@ a{
   background-repeat: repeat;
   background-position: center 0;
   background-size: cover;
+}
+
+.contact__title{
+  font-family: Merriweather,sans-serif;
+  font-weight:700;
+  font-size:40px;
+  line-height: 80px;
+  padding-top:60px;
+  padding-bottom: 20px;
+
+  color:#BDAE82;
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact__form{
+  float: right;
+  min-width: 450px;
+}
+
+
+
+.contact__email,.contact__phone
+{
+  width: 100%;
+  margin-top: 20px;
+  background-color: inherit;
+  border:2px solid #BDAE82;
+  color:white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 5px 5px;
+  
+
+}
+
+.contact__email::placeholder{
+  color:#BDAE82;
+  padding-left: 10px;
+  
+  
+  
+}
+
+.contact__phone::placeholder{
+  color:#BDAE82;
+  padding-left: 10px;
+
+}
+
+.contact__textarea{
+  width: 100%;
+  background-color: inherit;
+  border:2px solid #BDAE82;
+  color:white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 5px 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  resize: none;
+
+}
+
+.contact__textarea::placeholder{
+  color:#BDAE82;
+  padding-left: 10px;
+}
+
+.submit__button{
+  width: 220px;
+  font-family: Inter;
+  padding: 8px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #BDAE82;
+  border:none;
+  color:black;
+
+}
+
+/*FOOTER*/
+
+.footer{
+  background-color: black;
+}
+
+.footer__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item{
+  padding: 50px 0 50px;
+  font-family:Inter,san-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color:white;
+}
+
+.footer__item-container{
+  display: flex;
+  
+}
+
+.footer__item-img + .footer__item-img{
+  margin-left: 30px;
+}
+
+.footer__item-text span{
+  margin-left: 20px;
 }
