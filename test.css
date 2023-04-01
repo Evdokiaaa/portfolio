@@ -91,6 +91,33 @@ a{
     padding: 0 20px;
 }
 
+.title{
+  font-family: Merriweather;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:#BDAE82
+}
+
+.title::before,
+.title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+   
+    width: 350px;
+    height: 2px;
+    margin: 20px;
+    
+    background-color: #BDAE82;
+}
+
+.title::after{
+  background-color:#BDAE82;
+}
+
 .header__top{
     background-image: url('./img/bg.jpg');
     background-repeat: no-repeat;
@@ -204,22 +231,7 @@ a{
   color: #BDAE82;
 }
 
-.skills__title::before,
-.skills__title::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-   
-    width: 350px;
-    height: 2px;
-    margin: 20px;
-    
-    background-color: #BDAE82;
-}
 
-.skills__title::after{
-  background-color:#BDAE82;
-}
 
 .skills__items{
   display: flex;
@@ -255,5 +267,62 @@ a{
   font-family: Inter,sans-serif;
   font-size: 18px;
   line-height: 36px;
+  color:white;
 
+}
+
+/*PORTFOLIO*/
+
+.portfolio{
+  background-color: rgb(0, 0, 0);
+}
+
+.portfolio__inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio__btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  
+}
+
+.portfolio__btn{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  padding: 8px 79px;
+  background: inherit;
+  border-color: #BDAE82;
+  color:#BDAE82;
+}
+.portfolio__btn + .portfolio__btn{
+  margin-left: 5px;
+}
+
+.portfolio__items{
+  display: grid;
+  grid-template-columns: repeat(3,450px); /*3 строчки по 450 ширину*/
+  grid-template-rows: repeat(2,560px); /*3 СТОЛБА ТЕРОСА в 560пх* (2итема в колонки)/*/
+  grid-gap: 25px;
+  margin-top: 60px;
+  justify-content: center;
+
+  
+  
+ 
+}
+
+.portfolio__item{
+  justify-content: space-between;
+
+  
+  
 }
