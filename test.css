@@ -315,14 +315,103 @@ a{
   margin-top: 60px;
   justify-content: center;
 
-  
-  
- 
 }
 
 .portfolio__item{
   justify-content: space-between;
 
+}
+
+/*VIDEO*/
+
+.video{
+  background-color: black;
+}
+
+.video__title{
+  padding: 100px 0 60px;
+}
+
+
+.video__background{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.video__button{
+  position: absolute;
+  
   
   
 }
+
+.video__btn{
+  background-color: inherit;
+  border: none; 
+  cursor: pointer;
+
+}
+
+/*PRICE*/
+
+.price{
+  background-color: black;
+}
+
+.price__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.price__item{
+  border:1px solid white;
+  text-align: center;
+  
+}
+
+.price__item-title{
+  font-family: Merriweather;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 43px;
+  margin-bottom: 20px;
+
+}
+
+.price__item-price{
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #BDAE82;
+
+
+}
+/* 
+.price__item-title{
+  padding-top: 45px;
+}
+
+.price__item-price{
+  padding: 0 190px 0;
+} */
+
+.price__item-text{
+  padding: 20px 138px 40px 144px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+}  
