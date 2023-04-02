@@ -108,6 +108,8 @@ a{
   color:#BDAE82
 }
 
+
+
 .title::before,
 .title::after {
     content: "";
@@ -163,6 +165,13 @@ a{
 
 }
 
+.menu__item-link:hover{
+  color:#bdae82;
+
+}
+
+
+
 /*------------header looks good*/
 
 .hero__content{
@@ -186,6 +195,7 @@ a{
     height: 120px;
     font-family: 'Merriweather';
     font-style: normal;
+    text-align: center;
     font-weight: 700;
     font-size: 60px;
     color:white;
@@ -212,6 +222,10 @@ a{
     font-size: 20px;
     color:black;
     text-align: center;
+}
+
+.header__button:hover{
+  color:white;
 }
 
 /*SKILLS*/
@@ -312,6 +326,11 @@ a{
 }
 .portfolio__btn + .portfolio__btn{
   margin-left: 5px;
+}
+
+.portfolio__btn:hover{
+  color:white;
+  cursor: pointer;
 }
 
 .portfolio__items{
@@ -587,4 +606,44 @@ form{
 
 .footer__item-text span{
   margin-left: 20px;
+}
+
+/*ADAPTIVE*/
+
+@media (max-width:1440px){
+  .container{
+    width: calc(100% - 40px);
+
+  }
+
+  .skills__items{
+    justify-content: space-around;
+    
+  }
+}
+
+
+@media(max-width:990px){
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px; 
+  }
+}
+
+@media (max-width:665px){
+  .skills__items{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media(max-width:520px){
+  .title{
+    width: 100%;
+  }
+
 }
