@@ -302,7 +302,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  
 }
 
 .portfolio__btns{
@@ -315,6 +315,7 @@ a{
 .portfolio__btn{
   font-family: 'Inter';
   font-style: normal;
+  max-width: 220px;
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
@@ -322,6 +323,7 @@ a{
   padding: 8px 79px;
   background: inherit;
   border-color: #BDAE82;
+  margin-left: 5px;
   color:#BDAE82;
 }
 .portfolio__btn + .portfolio__btn{
@@ -620,6 +622,21 @@ form{
     justify-content: space-around;
     
   }
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px; 
+  }
+
+  .portfolio__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
@@ -630,6 +647,31 @@ form{
     justify-content: center;
     width: 100%;
     padding: 20px; 
+  }
+
+  .portfolio__btns{
+    flex-wrap: wrap;
+    
+  }
+
+  .portfolio__btn {
+    flex-basis: 45%;
+    max-width: none;
+    margin-top:10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 32px;
+    font-size:23px ;
+  }
+
+  .portfolio__items{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
