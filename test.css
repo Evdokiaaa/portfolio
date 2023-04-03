@@ -407,9 +407,11 @@ a{
   border: 3px solid #BDAE82;
   text-align: center;
   margin-bottom: 100px;
+  
    /*top */
   
 }
+
 
 .price__item + .price__item{
   margin-left: 25px;
@@ -438,6 +440,10 @@ a{
   color: #BDAE82;
 
 
+}
+
+.price__item:nth-child(1){
+  margin-left: 20px;
 }
 
 .price__item-text{
@@ -623,6 +629,7 @@ form{
     
   }
 
+
   .title{
     display: flex;
     align-items: center;
@@ -637,6 +644,24 @@ form{
     justify-content: center;
     align-items: center;
   }
+
+  .video__background{
+    margin: 0 calc(-50vw + 50%)
+  }
+  
+  .video__btn img {
+    transform: scale(0.8);
+  }
+
+  .price__items{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+
 }
 
 
@@ -673,12 +698,19 @@ form{
     justify-content: center;
     align-items: center;
   }
+
+  .video__btn img {
+    transform: scale(0.5);
+  }
 }
 
 @media (max-width:665px){
   .skills__items{
     display: flex;
     flex-direction: column;
+  }
+  .video__btn img {
+    transform: scale(0.4);
   }
 
 }
@@ -687,5 +719,10 @@ form{
   .title{
     width: 100%;
   }
+  .video__btn img {
+    transform: scale(0.3);
+  }
 
 }
+
+/*PRICE SECTION SHOULD BE FIXED*/
