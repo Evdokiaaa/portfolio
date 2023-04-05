@@ -170,6 +170,12 @@ a{
 
 }
 
+.EN::after{
+  content: '/';
+  color:white;
+  font-size: 18px;
+}
+
 
 
 /*------------header looks good*/
@@ -615,7 +621,7 @@ form{
   
 }
 
-.footer__item-img + .footer__item-img{
+.footer__item-link + .footer__item-link{
   margin-left: 30px;
 }
 
