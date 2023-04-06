@@ -4,6 +4,23 @@ const portfolio_btn = document.querySelectorAll('.portfolio__btn');
 const portfolioImgs = document.querySelectorAll('.portfolio__img');
 const ruLanguage = document.querySelector('.RU');
 const engLanguage = document.querySelector('.EN');
+const themeSwitcherBtn = document.querySelector('.menu__item-button')
+const hoverImage =document.querySelectorAll('.hover');
+
+
+hoverImage.forEach(element=>{
+    const hoverImageSrc = element.dataset.hover
+    console.log(hoverImageSrc)
+    element.addEventListener('mouseover',function(){
+        element.src=hoverImageSrc;
+        
+    })
+
+    element.addEventListener('mouseout',()=>{
+        element.src=element.dataset.src;
+    })
+})
+
 
 ruLanguage.addEventListener('click',function(){
     getTranslate('ru')
@@ -70,4 +87,36 @@ function getTranslate(lang){
         }
     })
 }
+
+
+//theme switcher
+
+const classesForChange = [
+    '.skills',
+    '.portfolio',
+    '.video',
+    '.price',
+    '.skills__title',
+    '.contact',
+    '.price__item-title',
+    '.price__item-text',
+    '.portfolio__title',
+    '.price__title',
+    '.skills__item-title',
+    '.skills_item-text',
+    '.video__title']
+
+    
+
+themeSwitcherBtn.addEventListener('click',()=>{
+
+    classesForChange.forEach(item=>{
+        document.querySelector(item).classList.toggle('light__theme');
+         
+    })
+
+})
+
+
+
 
