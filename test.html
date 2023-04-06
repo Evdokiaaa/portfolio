@@ -12,7 +12,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id = 'header'>
         <div class="header__top">
             <div class="container">
                 <div class="header__inner">
@@ -22,32 +22,32 @@
                     <nav class = 'menu'>
                         <ul class = 'menu__list'>
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link' data-i101="skills"  href="#">Skills</a>
+                                <a class = 'menu__item-link' data-i101="skills"  href="#skills">Skills</a>
                             </li>
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link' data-i101= 'portfolio' href="#">Portfolio</a>
+                                <a class = 'menu__item-link' data-i101= 'portfolio' href="#portfolio">Portfolio</a>
                             </li>
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link' data-i101 = 'video' href="#">Video</a>
+                                <a class = 'menu__item-link' data-i101 = 'video' href="#video">Video</a>
                             </li>
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link'  data-i101 = 'price' href="#">Price</a>
+                                <a class = 'menu__item-link'  data-i101 = 'price' href="#price">Price</a>
                             </li>
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link' data-i101 = 'contacts' href="#">Contacts</a>
+                                <a class = 'menu__item-link' data-i101 = 'contacts' href="#contact">Contacts</a>
                             </li>
 
                             <li class = 'menu__item'>
-                                <a class = 'menu__item-link EN' href="#">EN </a>
+                                <a class = 'menu__item-language EN' href="#">EN </a>
                                 
-                                <a class = 'menu__item-link RU' href="#">RU</a>
+                                <a class = 'menu__item-language RU' href="#">RU</a>
 
                             </li>
 
-                            <li class = 'menu__item'>
-                                <button class = 'menu__item-button'>
-                                    <img src = './img/theme_switcher.svg '  class = 'theme__img hover'>
-                                </button>
+                            <li class = 'menu__item switcher'>
+                                <h2>Dark</h2>
+                                <input type="checkbox" class = 'toggle-btn'>
+                                <h2>Light</h2>
                             </li>
 
                         </ul>
@@ -57,7 +57,7 @@
         </div>
     </header> 
 
-     <section class = 'hero'>
+     <section class = 'hero' id = 'hero'>
         <div class="hero__content">
             <div class="container">
                 <div class="hero__inner">
@@ -69,7 +69,7 @@
         </div>
     </section> 
     
-    <section class = 'skills'>
+    <section class = 'skills' id = 'skills'>
         <div class="container">
             <div class="skills__inner">
                 <h2 class="skills__title title" data-i101="skills">Skills</h2>
@@ -99,7 +99,7 @@
         </div>
     </section> 
 
-    <section class="portfolio">
+    <section class="portfolio" id = 'portfolio'>
         <div class="portfolio__content" >
             <div class="container">
                 <div class="portfolio__inner">
@@ -137,7 +137,7 @@
         </div>
     </section> 
 
-    <section class="video">
+    <section class="video" id = 'video'>
         <div class="video__content">
             <div class="container">
                 <div class="video__inner">
@@ -147,7 +147,7 @@
                     <div class="video__background">
                         <img src="/img/video_bg.jpg" alt="video" class ='video__picture'>
                         <div class="video__button">
-                            <button class = 'video__btn' ><img src="/img/video_btn.svg" alt="btn" ></button>
+                            <button class = 'video__btn' ><img src="/img/video_btn.svg" alt="btn" data-hover="./img/Hover-image/play.svg" data-src ='/img/video_btn.svg' class ='hover'></button>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
         </div>
     </section> 
 
-    <section class="price">
+    <section class="price" id = 'price'>
         <div class="price__content">
             <div class="container">
                 <div class="price__inner">
@@ -206,7 +206,7 @@
 
     </section> 
 
-    <section class = 'contact'>
+    <section class = 'contact' id = 'contact'>
         <div class="contact__content">
             <div class="container">
                 <div class="contact__inner"> 
@@ -244,17 +244,17 @@
                     <div class="footer__item">
                         <div class="footer__item-container">
                             <a class = 'footer__item-link'>
-                                <img class = 'footer__item-img hover' src="./img/footer__pics/instagram_logo.svg" alt="logo">
+                                <img class = 'footer__item-img hover' src="./img/footer__pics/instagram_logo.svg" alt="logo" data-hover="./img/Hover-image/instagram.svg" data-src ="./img/footer__pics/instagram_logo.svg" >
                             </a>
                             <a class = 'footer__item-link'>
-                                <img class = 'footer__item-img hover' src="/img/footer__pics/facebook_logo.svg" alt="logo">
+                                <img class = 'footer__item-img hover' src="/img/footer__pics/facebook_logo.svg" alt="logo" data-hover="./img/Hover-image/facebook.svg" data-src ="/img/footer__pics/facebook_logo.svg">
 
                             </a>
                             <a class = 'footer__item-link'>
-                                <img class = 'footer__item-img hover' src="/img/footer__pics/twitter_logo.svg" alt="logo">
+                                <img class = 'footer__item-img hover' src="/img/footer__pics/twitter_logo.svg" alt="logo" data-hover="./img/Hover-image/twitter.svg" data-src ="/img/footer__pics/twitter_logo.svg" >
                             </a>
                             <a class = 'footer__item-link'>
-                                <img class = 'footer__item-img hover' data-hover="./img/Hover-image/pinterest.svg" src="/img/footer__pics/pinterest__logo.svg" alt="logo">
+                                <img class = 'footer__item-img hover' data-hover="./img/Hover-image/pinterest.svg" src="/img/footer__pics/pinterest__logo.svg" data-src = '/img/footer__pics/pinterest__logo.svg' alt="logo">
                             </a>
                             
                             

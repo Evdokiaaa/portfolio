@@ -4,20 +4,24 @@ const portfolio_btn = document.querySelectorAll('.portfolio__btn');
 const portfolioImgs = document.querySelectorAll('.portfolio__img');
 const ruLanguage = document.querySelector('.RU');
 const engLanguage = document.querySelector('.EN');
-const themeSwitcherBtn = document.querySelector('.menu__item-button')
+const themeSwitcherBtn = document.querySelector('.toggle-btn')
 const hoverImage =document.querySelectorAll('.hover');
+
+
 
 
 hoverImage.forEach(element=>{
     const hoverImageSrc = element.dataset.hover
-    console.log(hoverImageSrc)
+    
     element.addEventListener('mouseover',function(){
+        
         element.src=hoverImageSrc;
         
     })
 
     element.addEventListener('mouseout',()=>{
         element.src=element.dataset.src;
+        
     })
 })
 
@@ -106,17 +110,41 @@ const classesForChange = [
     '.skills_item-text',
     '.video__title']
 
-    
 
-themeSwitcherBtn.addEventListener('click',()=>{
 
-    classesForChange.forEach(item=>{
-        document.querySelector(item).classList.toggle('light__theme');
-         
-    })
+themeSwitcherBtn.addEventListener('click',(e)=>{
+    if(e.target.checked){
+        classesForChange.forEach(item=>{
+            document.querySelector(item).classList.add('light__theme');
+             
+        })
+    }
+    else{
+        classesForChange.forEach(item=>{
+            document.querySelector(item).classList.remove('light__theme');
 
+        })
+    }
+        
 })
 
 
+//nav menu smooth scroll
 
+const links = document.querySelectorAll('.menu__item-link');
+console.log(links)
+links.forEach((item)=>{
+    item.addEventListener('click',(event)=>{
+        event.preventDefault();
+        const id = item.getAttribute('href'); // get link id
+        document.querySelector(id).scrollIntoView({
+            behavior:'smooth',
+            block:'start'
+        })
+
+            
+        
+
+    })
+})
 
