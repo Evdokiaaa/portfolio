@@ -129,4 +129,12 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-//* video player
+const contactLinks = document.querySelectorAll(".contact__click");
+contactLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelector("#contact").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
